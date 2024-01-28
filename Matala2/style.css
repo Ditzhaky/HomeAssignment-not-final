@@ -14,7 +14,7 @@ nav {
     height: 100px; 
     margin-bottom: 20px;  
 }
-nav.black ul {background: #031916;}
+nav.black ul {background: #077f6f;}
 
 
  .active a {
@@ -23,8 +23,7 @@ nav.black ul {background: #031916;}
     font-weight: bold;
     font-family: cursive;
     font-size: 25px;
-    transition: background-color 1s, color 1s, font-weight 1s , font-size 1s;
-    
+    transition: background-color 1s, color 1s, font-weight 1s , font-size 1s;  
 }
 nav a {
     color:            #0c0000;   
@@ -42,8 +41,7 @@ nav a:hover{
     background-color: #000000; 
     color: #F8F8F8;
     font-weight: bold;
-    font-size: 25px;
-    
+    font-size: 25px; 
 }
 nav ul {
 list-style: none;
@@ -51,37 +49,28 @@ background: rgba(0,0,0,0);
 width: 100%;
 list-style: none;
 display: flex;
-justify-content: flex-end;
-align-items: center;
+justify-content: space-between;
 color: white;
 padding: 0px;
 transition: 1s;
-
-
 }
 
-nav ul li  {
-    display: inline-block;
-    padding: 20px;
-    
-   
-    
+nav ul li  {   
+    padding: 1rem;      
 }
 nav ul li a {
- text-decoration: none;
+ 
  color:white;
  font-size: 0.8rem;
  font-family: cursive;;
  text-transform: uppercase;
  letter-spacing: 1px; 
- 
 }
 
 nav li {
     display: inline;
     height: 3em;    
 }
-
 nav a{
     height: auto;
     padding: 0 30px;
@@ -90,78 +79,66 @@ nav a{
     align-items: center;
     color: black;
 }
-
 .container-home {
     display: flex;
-    background-color: rgb(187, 189, 191);
-    margin-top: 10px;   
+    background-color: rgb(187, 189, 191);    
 }
-
 .text-container {
     flex: 1;
     padding: 70px;
     text-align: center;
     color: #fff;
-    margin-top: 100px;   
+    margin-top: 7rem;   
 }
-.text-container h1{font-size: 7rem; }
-.text-container h4{font-size: 4rem;}
+.text-container h1{font-size: 7rem;margin: 0.3rem; }
+.text-container h4{font-size: 4rem;margin: 0.3rem;}
 .text-container p{font-size: 1.1em;}
 .text-container h6{color: #000; }
-.text-container h1,.text-container h4{margin: 5px;}
 
-.image-container {
+.image-container {  
     flex: 1;
-    text-align: right;
-    position:static   
-}
-
-.image-container img {
     max-width: 100%;
-    height: auto;
-    margin-top: 5rem;
+    height: 100%;  
 }
-
-
+.image-container img {
+    height: auto;
+    margin-top: 6.5rem;   
+}
 .cards-container-about {
     margin-top: 0px;
     padding: 0px;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
     background-color: #72c4b8;
 }
 
 .card img {
-    height: 500px;
-    width: 350px;
-    border-radius: 3px;
-    transition: .5s;
+    height: 30rem;
+    width: 100%;
+    transition: 1s;
 }
 
 .card{
     height: auto;
-    margin: 50px;
+    margin: 3.5rem;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    margin-top: 150px;
+    margin-top: 15rem;
 }
 
 .intro{
-    height: 200px;
-    width: 350px;
+    height: 5rem;
+    max-width: 25%;
     padding: 6px;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
     background: rgb(27,27,27,.5);
     color: #fff;
     transition: .5s;
 }
 .card h1{
-    margin: 10px;
     font-size: 40px;
     font-family: cursive;
 }
@@ -170,18 +147,18 @@ nav a{
     font-size: 20px;
     font-family: cursive;
     visibility: hidden;
-    opacity: 0;
-    
+    opacity: 0; 
 }
 
 .card:hover .intro{
-    bottom: 240px;
+    bottom: 10rem;
     background: rgb(6, 0, 0);
     height: auto;
 }
 .card:hover p {
     opacity: 1;
     visibility: visible;
+    height: auto;
 }
 
 
@@ -189,11 +166,12 @@ nav a{
 margin-top: 0px;
 margin-bottom: 0px;
 font-weight: normal;
-
 text-decoration: none;
 color: #fff;
 font-size: 20px;
 }
+
+
 
 .content-resume {
     background-color: #BBBDBF;
@@ -210,14 +188,14 @@ font-size: 20px;
     background-color: #8fdcd0;
     padding: 0;   
 }
-.image-container-resume img {width:28%; height: auto;padding: 0; }
+.image-container-resume img {width: 25%;height: auto; padding: 0; }
 
 .sidebar{
     position: fixed;
     top:0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 20rem;
     z-index: 999;
     box-shadow:-10px 0 10px rgba(0,0,0,0.1) ;
     display: none;
@@ -229,28 +207,14 @@ font-size: 20px;
 }
 .sidebar li{
     width: 100%;
+    height: auto;
 }
-.sidebar a{width: 100%;}
+.sidebar a{width: 100%; height: auto;}
 .menu-button{
     display: none;
+    width: 100%;
+    height: auto;
 }
-
-@media(max-width:700px) {
-    .hideonmobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
-    
-        
-    
-    *{font-family: cursive;
-    margin: 0;}
-    
-    
-}
-
 .projects-content h1 {
     text-align: center;
    padding: 130px;
@@ -260,31 +224,71 @@ font-size: 20px;
     padding: 20px; 
 }
 
-
-
-
-
 .box {
-    width: 400px;
-    height: 400px;
+    width: 100%;
     border: 30px solid #80c4c7;
     margin: 20px;
-    box-sizing: border-box;
-    
-    
+    box-sizing: border-box;  
 }
-
-
 .projects-content-div {
     align-items: center;
     justify-content: center;
     display: flex;
-    
+    width: 100%;
+    height: auto;   
 }
 .box img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 200px;
 }
+
+
+@media(max-width:700px) {
+    .hideonmobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .card img {
+        height: 10rem;
+        width: 100%;
+        transition: 1s;
+    }
+    .card:hover .intro{
+        background: rgb(6, 0, 0);
+        height: auto;
+    }
+    .intro{
+    height: 5rem;
+    max-width: 25%;
+    padding: 6px;
+    box-sizing: border-box;
+    position: fixed;
+    background: rgb(27,27,27,.5);
+    color: #fff;
+    transition: .5s;
+    }
+      
+    
+    *{font-family: cursive;
+    margin: 0;}
+    .projects-content-div {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+}
+
+
 
 
 
