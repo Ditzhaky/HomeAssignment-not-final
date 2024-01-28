@@ -1,6 +1,6 @@
 body {
     font-family: cursive, Arial, Helvetica, sans-serif;
-    background-color: #a5c4d3; min-height: 100vh;
+    background-color: #72c4b8; min-height: 100vh;
 }
 
 nav {
@@ -126,10 +126,11 @@ nav a{
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
     margin-top: 15rem;
+    min-width: 25%;
 }
 
 .intro{
-    height: 5rem;
+    height: 3rem;
     max-width: 25%;
     padding: 6px;
     box-sizing: border-box;
@@ -151,7 +152,7 @@ nav a{
 }
 
 .card:hover .intro{
-    bottom: 10rem;
+    bottom: 5rem;
     background: rgb(6, 0, 0);
     height: auto;
 }
@@ -244,6 +245,7 @@ font-size: 20px;
 }
 
 
+
 @media(max-width:700px) {
     .hideonmobile{
         display: none;
@@ -252,6 +254,10 @@ font-size: 20px;
         display: block;
         height: auto;
         width: 100%;
+    }
+    .cards-container-about{
+        justify-content: center;
+    align-items: center;
     }
     .card img {
         height: 10rem;
