@@ -1,5 +1,5 @@
 body {
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     background-color: #a5c4d3; min-height: 100vh;
 }
 
@@ -70,7 +70,7 @@ nav ul li  {
 nav ul li a {
  text-decoration: none;
  color:white;
- font-size: 15px;
+ font-size: 0.8rem;
  font-family: cursive;;
  text-transform: uppercase;
  letter-spacing: 1px; 
@@ -79,7 +79,7 @@ nav ul li a {
 
 nav li {
     display: inline;
-    height: 50px;    
+    height: 3em;    
 }
 
 nav a{
@@ -104,21 +104,22 @@ nav a{
     color: #fff;
     margin-top: 100px;   
 }
-.text-container h1{font-size: 100px; }
-.text-container h4{font-size: 40px;}
-.text-container p{font-size: 10px;}
+.text-container h1{font-size: 7rem; }
+.text-container h4{font-size: 4rem;}
+.text-container p{font-size: 1.1em;}
 .text-container h6{color: #000; }
 .text-container h1,.text-container h4{margin: 5px;}
 
 .image-container {
     flex: 1;
-    text-align: right;   
+    text-align: right;
+    position:static   
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 5rem;
 }
 
 
@@ -204,10 +205,12 @@ font-size: 20px;
 
 .image-container-resume{
     display: flex;
+    justify-content: space-evenly;
     max-width: 100%;  
-    background-color: #8fdcd0;   
+    background-color: #8fdcd0;
+    padding: 0;   
 }
-.image-container-resume img {max-width: 28%; height: auto; }
+.image-container-resume img {width:28%; height: auto;padding: 0; }
 
 .sidebar{
     position: fixed;
@@ -239,11 +242,12 @@ font-size: 20px;
     .menu-button{
         display: block;
     }
-    .image-container img {
-        max-width: auto;
-        height: auto;
+    
         
-    }
+    
+    *{font-family: cursive;
+    margin: 0;}
+    
     
 }
 
