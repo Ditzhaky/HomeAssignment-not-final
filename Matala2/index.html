@@ -1,6 +1,18 @@
 <!DOCTYPE html>
     <head>
-      
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>$(window).scroll(function(){if($(window).scrollTop()){$("nav").addClass("black");}else{
+          $("nav").removeClass("black");  
+        }})</script>
+        <script>
+            $(function(){
+                $('a').each(function(){
+                    if ($(this).prop('href') == window.location.href) {
+                        $(this).addClass('active'); $(this).parents('li').addClass('active');
+                    }
+                });
+            });
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
@@ -33,19 +45,6 @@
                 sidebar.style.display = 'none'
             }
         </script>
-          <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-          <script>$(window).scroll(function(){if($(window).scrollTop()){$("nav").addClass("black");}else{
-            $("nav").removeClass("black");  
-          }})</script>
-          <script>
-              $(function(){
-                  $('a').each(function(){
-                      if ($(this).prop('href') == window.location.href) {
-                          $(this).addClass('active'); $(this).parents('li').addClass('active');
-                      }
-                  });
-              });
-          </script>
         </header>
         <body>
         <section class="container-home">
