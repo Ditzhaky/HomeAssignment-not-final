@@ -81,7 +81,7 @@ nav a{
 }
 .container-home {
     display: flex;
-    background-color: rgb(187, 189, 191);    
+    background-color: #72c4b8;    
 }
 .text-container {
     flex: 1;
@@ -166,7 +166,7 @@ nav a{
 }
 
 
-.footer-home p,.footer-home a {background-color:#63a38c ;
+.footer-home p,.footer-home a {background-color: #72c4b8;;
 margin-top: 0px;
 margin-bottom: 0px;
 font-weight: normal;
