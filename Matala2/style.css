@@ -21,7 +21,7 @@ nav.black ul {background: #077f6f;}
     color:            #0c0000;
     background-color: #f4f6f9;
     font-weight: bold;
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     font-size: 25px;
     transition: background-color 1s, color 1s, font-weight 1s , font-size 1s;  
 }
@@ -34,7 +34,7 @@ nav a:hover{
     color: #F8F8F8;
     font-weight: bold;
     font-size: 25px;
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
  .active a:hover{
@@ -62,7 +62,7 @@ nav ul li a {
  
  color:white;
  font-size: 0.8rem;
- font-family: cursive;;
+ font-family: cursive, Arial, Helvetica, sans-serif;
  text-transform: uppercase;
  letter-spacing: 1px; 
 }
@@ -110,7 +110,7 @@ nav a{
 .cards-container-about {
     margin-top: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,12 +144,12 @@ nav a{
 }
 .card h1{
     font-size: 40px;
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 .card p{
     margin: 10px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     visibility: hidden;
     opacity: 0; 
 }
@@ -180,7 +180,7 @@ font-size: 20px;
 .content-resume {
     background-color: #BBBDBF;
     padding: 100px; 
-    font-family:cursive    
+    font-family:cursive, Arial, Helvetica, sans-serif;   
 }
 
 
@@ -283,7 +283,7 @@ font-size: 20px;
     }
       
     
-    *{font-family: cursive;
+    *{font-family: cursive, Arial, Helvetica, sans-serif;
     }
     .projects-content-div {
         align-items: center;
