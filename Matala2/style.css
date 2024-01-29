@@ -213,7 +213,7 @@ font-size: 20px;
     width: 100%;
     height: auto;
 }
-.sidebar a{width: 100%; height: auto;}
+.sidebar a{width: 25%; height: auto;}
 .menu-button{
     display: none;
     width: 100%;
